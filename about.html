@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - IRIS Psychotherapy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Iris Logo" class="nav-logo-img">
+        <span class="nav-logo-text">Hope &bull; Trust &bull; Wisdom</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="#">Our Therapists</a>
+      </div>
+      <div class="nav-btn" id="navBtn">
+        <a href="#" class="btn btn-primary">Appointment &rarr;</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- About Hero -->
+  <section class="about-hero">
+    <div class="container">
+      <img src="images/logo.png" alt="Iris Logo" class="about-hero-logo">
+      <h1><span class="heading-gradient">A Space where Healing begins</span></h1>
+      <div class="hero-divider"></div>
+      <p class="subtitle">
+        Iris was created as a gentle, reflective space — a place to slow down, reconnect, and meet yourself with honesty and care.
+      </p>
+    </div>
+    <div class="about-hero-curve"></div>
+  </section>
+
+  <!-- Story Section -->
+  <section class="story-section">
+    <div class="container">
+      <div class="story-image">
+        <img src="images/portrait.avif" alt="Therapist Portrait">
+      </div>
+      <div class="story-text">
+        <h2>The Story Behind Iris</h2>
+        <p>
+          Iris was born from a deeply personal journey — a path of recovery, reflection and rediscovery. It grew from the belief that healing doesn't begin by fixing what's "wrong," but by listening to what has long been unheard.
+        </p>
+        <p>Iris is a space for</p>
+        <ul>
+          <li>reflection</li>
+          <li>growth</li>
+          <li>understanding</li>
+          <li>and coming home to yourself</li>
+        </ul>
+        <p>A guiding truth sits at the heart of this place:</p>
+        <blockquote>
+          "Through darkness comes awareness, and through awareness comes healing."
+        </blockquote>
+        <p>
+          A reminder echoed in the words of Alan Watts — to flow like water. Whether you're navigating change, uncertainty, or simply longing for deeper connection with yourself, Iris could be a place to begin
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="aboutme-section">
+    <div class="container">
+      <div class="aboutme-text">
+        <h2>About Me</h2>
+        <p>
+          My own healing journey changed the course of my life. When I committed to my recovery, I gained insight, resilience, and a sense of purpose I hadn't known before. What began as personal transformation became a calling to support others on their paths.
+        </p>
+        <p>
+          This led me to pursue a master's degree in Gestalt Psychotherapy — a commitment to continued learning, growth, and service. My experience shaped not only my career, but also the way I show up with every person I work with: with presence, compassion, and a deep respect for the courage it takes to begin again.
+        </p>
+        <p>
+          Music is one of my passions, and helping others is at the heart of what I do. Having walked my own path of recovery, I'm here to offer a safe space and be fully present for those who need support
+        </p>
+      </div>
+      <div class="aboutme-image">
+        <img src="images/art.avif" alt="Artistic Painting">
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <img src="images/healing-flowers.avif" alt="Healing Flowers" class="cta-flower-img">
+      <h2 class="italic-coral">We're here to nurture you</h2>
+      <a href="#" class="btn btn-outline">Take the First Step</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Hope, Trust &amp; Wisdom</h3>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <p class="copyright">&copy; 2025 Iris by <a href="#">Mahmoudd</a></p>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <p><span class="label">Phone Number</span>+356 9999 9961</p>
+          <p><span class="label">Email</span>irispsychotherapy.stef@gmail.com</p>
+          <p><span class="label">Address</span>Provided upon request</p>
+        </div>
+        <div class="footer-hours">
+          <h4>Working Hours</h4>
+          <p><span>Monday to Friday:</span> <span>8 AM - 8 PM</span></p>
+          <p><span>Saturday:</span> <span>8 AM - 1 PM</span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    const navBtn = document.getElementById('navBtn');
+    navToggle.addEventListener('click', function() {
+      navLinks.classList.toggle('active');
+      navBtn.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
