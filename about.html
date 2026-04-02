@@ -13,7 +13,7 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar">
+  <nav class="navbar" id="navbar">
     <div class="container">
       <a href="index.html" class="nav-logo">
         <img src="images/logo.png" alt="Iris Logo" class="nav-logo-img">
@@ -22,10 +22,11 @@
       <div class="nav-links" id="navLinks">
         <a href="index.html">Home</a>
         <a href="about.html" class="active">About</a>
-        <a href="#">Our Therapists</a>
+        <a href="therapists.html">Our Therapists</a>
+        <a href="index.html#contact">Contact</a>
       </div>
       <div class="nav-btn" id="navBtn">
-        <a href="#" class="btn btn-primary">Appointment &rarr;</a>
+        <a href="index.html#contact" class="btn btn-primary">Appointment &rarr;</a>
       </div>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
         <span></span>
@@ -103,7 +104,7 @@
     <div class="container">
       <img src="images/healing-flowers.avif" alt="Healing Flowers" class="cta-flower-img">
       <h2 class="italic-coral">We're here to nurture you</h2>
-      <a href="#" class="btn btn-outline">Take the First Step</a>
+      <a href="index.html#contact" class="btn btn-outline">Take the First Step</a>
     </div>
   </section>
 
@@ -114,15 +115,15 @@
         <div class="footer-brand">
           <h3>Hope, Trust &amp; Wisdom</h3>
           <div class="footer-social">
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/p/DRwEeCRiIgd/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/35699999961" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
           </div>
-          <p class="copyright">&copy; 2025 Iris by <a href="#">Mahmoudd</a></p>
+          <p class="copyright">&copy; 2025 Iris by <a href="https://i-zaak.com" target="_blank" rel="noopener" class="credit-link"><img src="images/eye-logo.png" alt="I-with-An-Eye" class="credit-logo">I-with-An-Eye</a></p>
         </div>
         <div class="footer-contact">
           <h4>Contact Info</h4>
-          <p><span class="label">Phone Number</span>+356 9999 9961</p>
-          <p><span class="label">Email</span>irispsychotherapy.stef@gmail.com</p>
+          <p><span class="label">Phone Number</span><a href="tel:+35699999961">+356 9999 9961</a></p>
+          <p><span class="label">Email</span><a href="mailto:irispsychotherapy.stef@gmail.com">irispsychotherapy.stef@gmail.com</a></p>
           <p><span class="label">Address</span>Provided upon request</p>
         </div>
         <div class="footer-hours">
@@ -134,15 +135,7 @@
     </div>
   </footer>
 
-  <script>
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-    const navBtn = document.getElementById('navBtn');
-    navToggle.addEventListener('click', function() {
-      navLinks.classList.toggle('active');
-      navBtn.classList.toggle('active');
-    });
-  </script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>
