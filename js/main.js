@@ -67,6 +67,19 @@ revealEls.forEach(function (el) {
   revealObserver.observe(el);
 });
 
+// ===== Hero logo parallax float =====
+const heroLogo = document.querySelector('.hero-logo-img');
+
+if (heroLogo) {
+  function updateHeroParallax() {
+    const scrollY = window.scrollY;
+    const speed = 0.35;
+    heroLogo.style.transform = 'translate3d(0, ' + (scrollY * speed) + 'px, 0)';
+  }
+  window.addEventListener('scroll', updateHeroParallax, { passive: true });
+  updateHeroParallax();
+}
+
 // ===== Image fade-in on load =====
 document.querySelectorAll('img').forEach(function (img) {
   if (img.complete) {
