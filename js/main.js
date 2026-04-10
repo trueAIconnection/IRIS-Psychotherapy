@@ -67,17 +67,17 @@ revealEls.forEach(function (el) {
   revealObserver.observe(el);
 });
 
-// ===== Hero logo parallax float =====
+// ===== Hero logo grow on scroll =====
 const heroLogo = document.querySelector('.hero-logo-img');
 
 if (heroLogo) {
-  function updateHeroParallax() {
+  function updateHeroScale() {
     const scrollY = window.scrollY;
-    const speed = 0.35;
-    heroLogo.style.transform = 'translate3d(0, ' + (scrollY * speed) + 'px, 0)';
+    const scale = 1 + scrollY * 0.0008;
+    heroLogo.style.transform = 'scale(' + Math.min(scale, 1.25) + ')';
   }
-  window.addEventListener('scroll', updateHeroParallax, { passive: true });
-  updateHeroParallax();
+  window.addEventListener('scroll', updateHeroScale, { passive: true });
+  updateHeroScale();
 }
 
 // ===== Image fade-in on load =====
