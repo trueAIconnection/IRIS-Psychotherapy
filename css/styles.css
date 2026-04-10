@@ -219,6 +219,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   padding: 70px 0 90px;
   overflow: hidden;
+  background: linear-gradient(135deg, var(--cream-bg) 0%, #fdf0e4 50%, #f8e6d6 100%);
 }
 
 .hero-bg-video {
