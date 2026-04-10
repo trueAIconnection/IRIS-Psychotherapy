@@ -328,9 +328,10 @@ h1, h2, h3, h4, h5, h6 {
   flex: 1;
   min-width: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
   animation: fadeInUp 0.8s ease 0.2s both;
 }
 
