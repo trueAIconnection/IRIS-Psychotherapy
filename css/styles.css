@@ -241,6 +241,40 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 
+.hero-circles-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-circles-bg svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 1000px;
+}
+
+.hero-circles-bg .ring {
+  fill: none;
+  stroke: var(--button-purple);
+  stroke-width: 0.8;
+  opacity: 0.06;
+}
+
+.fol-drift {
+  animation: fol-glide 80s linear infinite;
+}
+
+@keyframes fol-glide {
+  0%   { transform: translate(-60%, -50%); }
+  50%  { transform: translate(-40%, -50%); }
+  100% { transform: translate(-60%, -50%); }
+}
+
 .hero .container {
   position: relative;
   z-index: 2;
