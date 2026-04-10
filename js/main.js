@@ -70,8 +70,9 @@ revealEls.forEach(function (el) {
 // ===== Hero logo grow on scroll =====
 const heroLogo = document.querySelector('.hero-logo-img');
 
-if (heroLogo) {
+if (heroLogo && window.innerWidth > 768) {
   function updateHeroScale() {
+    if (window.innerWidth <= 768) return;
     const scrollY = window.scrollY;
     const scale = 1 + scrollY * 0.0008;
     heroLogo.style.transform = 'scale(' + Math.min(scale, 1.25) + ')';
