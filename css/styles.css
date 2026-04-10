@@ -216,12 +216,34 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ===== Hero Section (Home) ===== */
 .hero {
-  background: linear-gradient(135deg, var(--cream-bg) 0%, #fdf0e4 50%, #f8e6d6 100%);
+  position: relative;
   padding: 70px 0 90px;
   overflow: hidden;
 }
 
+.hero-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(253, 248, 243, 0.82);
+  z-index: 1;
+}
+
 .hero .container {
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
   gap: 40px;
