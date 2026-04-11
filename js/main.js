@@ -1,12 +1,18 @@
-// ===== Mobile Nav Toggle =====
-const navToggle = document.getElementById('navToggle');
-const navLinks = document.getElementById('navLinks');
-const navBtn = document.getElementById('navBtn');
+// ===== Mobile Nav Toggle (tap on text logo) =====
+const navMenuTrigger = document.getElementById('navMenuTrigger');
 
-if (navToggle) {
-  navToggle.addEventListener('click', function () {
-    navLinks.classList.toggle('active');
-    navBtn.classList.toggle('active');
+if (navMenuTrigger) {
+  navMenuTrigger.addEventListener('click', function (e) {
+    if (window.innerWidth <= 768) {
+      e.preventDefault();
+      navMenuTrigger.classList.toggle('active');
+    }
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!navMenuTrigger.contains(e.target)) {
+      navMenuTrigger.classList.remove('active');
+    }
   });
 }
 
