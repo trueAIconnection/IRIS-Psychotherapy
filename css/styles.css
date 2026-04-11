@@ -139,6 +139,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-logo {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .nav-logo-img {
@@ -162,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-text-logo {
-  height: 22px;
+  height: 32px;
   object-fit: contain;
   transition: opacity 0.3s ease;
 }
@@ -1366,6 +1367,10 @@ img.img-loaded {
 @media (max-width: 768px) {
   .nav-logo-text {
     display: none;
+  }
+
+  .nav-text-logo {
+    height: 24px;
   }
 
   .hero {
